@@ -1,92 +1,84 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kawara Store • Beranda</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kawara Store</title>
     <style>
         body {
             margin: 0;
             font-family: "Poppins", sans-serif;
             background: radial-gradient(circle at top, #14161c, #0b0c0f 70%);
-            color: #fff;
+            color: #ffffff;
             text-align: center;
         }
 
         header {
-            padding: 70px 20px 40px;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #5c7bff, #a24bff);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.45);
+            border-bottom: 2px solid rgba(255,255,255,0.1);
         }
-
         header h1 {
-            font-size: 48px;
-            font-weight: 800;
+            font-size: 46px;
             margin: 0;
-            text-shadow: 0 0 15px rgba(255,255,255,0.3);
+            font-weight: 800;
+            text-shadow: 0 0 12px rgba(255,255,255,0.35);
         }
-
         header p {
-            font-size: 18px;
-            opacity: 0.8;
             margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.85;
         }
 
-        .menu-box {
-            width: 92%;
-            max-width: 420px;
-            margin: 30px auto;
-            background: rgba(255,255,255,0.08);
-            padding: 28px 22px;
-            border-radius: 18px;
-            backdrop-filter: blur(6px);
-            border: 1px solid rgba(255,255,255,0.12);
-            box-shadow: 0 0 20px rgba(0,0,0,0.45);
+        .buttons {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
         .btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin: 14px 0;
-            padding: 15px 20px;
-            text-decoration: none;
+            width: 260px;
+            padding: 15px 22px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #5c7bff, #8a52ff);
             color: #fff;
-            font-size: 18px;
+            text-decoration: none;
             font-weight: 700;
-            border-radius: 12px;
-            background: linear-gradient(135deg, #5c7bff, #8e52ff);
-            box-shadow: 0 4px 14px rgba(110,130,255,0.25);
-            transition: 0.25s ease;
+            font-size: 20px;
+            transition: 0.25s;
+            box-shadow: 0 0 15px rgba(110,130,255,0.3);
         }
-
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 22px rgba(110,130,255,0.45);
+            background: linear-gradient(135deg, #6f8cff, #9c63ff);
+            box-shadow: 0 0 22px rgba(110,130,255,0.5);
         }
 
         footer {
-            margin-top: 40px;
-            opacity: 0.6;
-            padding-bottom: 25px;
+            margin-top: 70px;
+            padding: 30px;
+            opacity: 0.65;
+            font-size: 15px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>KAWARA STORE</h1>
-        <p>Pilih layanan yang ingin kamu buka</p>
+        <h1>KAWARA STORE 🎣</h1>
+        <p>Pilih Layanan</p>
     </header>
 
-    <div class="menu-box">
+    <div class="buttons">
         <a class="btn" href="https://kawarastore.github.io/" target="_blank">🎣 FISH IT</a>
-        <a class="btn" href="https://kawarastore.github.io/kawarastorerobux.github.io/" target="_blank">💎 ROBUX</a>
+        <a class="btn" href="https://kawarastore.github.io/kawarastorerobux.github.io/" target="_blank">💸 ROBUGS</a>
         <a class="btn" href="https://wa.link/qtrqze" target="_blank">📞 WA ADMIN</a>
     </div>
 
     <footer>
-        © Kawara Store 2025
+        <p>© Kawara Store 2025</p>
     </footer>
 
 </body>
