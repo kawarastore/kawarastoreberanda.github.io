@@ -4,103 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kawara Store</title>
-
     <style>
         body {
             margin: 0;
             font-family: "Poppins", sans-serif;
-            background: linear-gradient(180deg, #ffeef5, #ffd9ea);
-            color: #4a2a3f;
+            background: radial-gradient(circle at top, #14161c, #0b0c0f 70%);
+            color: #ffffff;
             text-align: center;
-            overflow-x: hidden;
-            animation: fadeIn 1s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
         }
 
         header {
-            padding: 70px 20px;
-            background: #ffb8d7;
-            background: linear-gradient(135deg, #ffb8d7, #ff9bc8);
-            border-bottom: 2px solid rgba(255,255,255,0.7);
-            box-shadow: 0 8px 25px rgba(255, 140, 190, 0.35);
-            animation: slideDown 0.9s ease-out;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #5c7bff, #a24bff);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.45);
+            border-bottom: 2px solid rgba(255,255,255,0.1);
         }
-
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-25px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
         header h1 {
-            font-size: 48px;
+            font-size: 46px;
             margin: 0;
-            font-weight: 900;
-            color: #ffffff;
-            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-            letter-spacing: 1px;
-        }
-
-        header p {
-            margin-top: 12px;
-            font-size: 19px;
-            color: #ffe6f3;
-            opacity: 0.95;
-        }
-
-        .notice {
-            margin-top: 25px;
-            font-size: 24px;
             font-weight: 800;
-            color: #fff8ba;
-            text-shadow: 0 0 12px rgba(255, 235, 150, 0.55);
-            animation: pulse 2s infinite ease-in-out;
+            text-shadow: 0 0 12px rgba(255,255,255,0.35);
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.85;
         }
 
-        @keyframes pulse {
-            0% { opacity: 0.9; }
-            50% { opacity: 1; }
-            100% { opacity: 0.9; }
+        /* Teks pengumuman */
+        .notice {
+            margin-top: 18px;
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffdf5c;
+            text-shadow: 0 0 10px rgba(255, 223, 92, 0.5);
         }
 
         .buttons {
-            margin-top: 70px;
+            margin-top: 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 22px;
+            gap: 20px;
         }
 
         .btn {
-            width: 270px;
-            padding: 15px 24px;
-            border-radius: 16px;
-            background: #ffffff;
-            color: #d62f89;
+            width: 260px;
+            padding: 15px 22px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #5c7bff, #8a52ff);
+            color: #fff;
             text-decoration: none;
             font-weight: 700;
             font-size: 20px;
-            box-shadow: 0 6px 18px rgba(255, 150, 200, 0.35);
-            transition: 0.25s ease-out;
-            transform: translateY(0);
+            transition: 0.25s;
+            box-shadow: 0 0 15px rgba(110,130,255,0.3);
         }
-
         .btn:hover {
-            background: #ffe3f1;
-            color: #c72a7f;
-            box-shadow: 0 10px 24px rgba(255, 150, 200, 0.55);
-            transform: translateY(-4px);
+            background: linear-gradient(135deg, #6f8cff, #9c63ff);
+            box-shadow: 0 0 22px rgba(110,130,255,0.5);
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 70px;
             padding: 30px;
-            opacity: 0.8;
+            opacity: 0.65;
             font-size: 15px;
-            color: #6b4a5c;
         }
     </style>
 </head>
@@ -110,6 +79,7 @@
         <h1>KAWARA STORE 🎣</h1>
         <p>Pilih Layanan</p>
 
+        <!-- Teks Tutup -->
         <div class="notice">TUTUP SAMPAI TANGGAL 5</div>
     </header>
 
